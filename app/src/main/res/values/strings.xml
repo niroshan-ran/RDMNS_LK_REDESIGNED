@@ -3,4 +3,9 @@
     <string name="menu_description">Welcome to RDMNS.LK</string>
     <string name="button_text">Submit News</string>
     <string name="image_description">Test Content Description</string>
+    <string name="menuName1">Submit News</string>
+    <string name="menuName2">Contact No of Stations</string>
+    <string name="menuName3">Contact Railway Security</string>
+    <string name="menuName4">Submit Complaints</string>
+    <string name="menuName5">About Us</string>
 </resources>
