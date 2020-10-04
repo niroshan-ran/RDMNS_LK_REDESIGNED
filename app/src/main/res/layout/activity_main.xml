@@ -54,10 +54,10 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/main_news_feed"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/button_text" />
+                    android:text="@string/main_news_feed" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
@@ -89,10 +89,10 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/trainSchedules"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/button_text" />
+                    android:text="@string/Train_Schecule" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

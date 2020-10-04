@@ -3,4 +3,9 @@
     <string name="menu_description">Welcome to RDMNS.LK</string>
     <string name="button_text">Submit News</string>
     <string name="image_description">Test Content Description</string>
+    <string name="title_activity_train_schedule">TrainSchedule</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="Train_Schecule">Train Schecule</string>
+    <string name="main_news_feed">Main News Feed</string>
 </resources>
