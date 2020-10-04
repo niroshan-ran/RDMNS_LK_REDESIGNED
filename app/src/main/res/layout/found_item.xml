@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtDetail"
+        android:id="@+id/txtDetails"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
@@ -38,13 +38,12 @@
         android:layout_width="409dp"
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="3dp"
         android:background="@color/colorAccent"
         android:backgroundTint="#00B8D4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDetail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDetails" />
 
     <ImageView
         android:id="@+id/imageView"

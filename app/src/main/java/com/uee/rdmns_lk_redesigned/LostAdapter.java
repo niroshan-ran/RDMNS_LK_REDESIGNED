@@ -51,7 +51,7 @@ public class LostAdapter extends BaseAdapter {
             row = inflater.inflate(layout, null);
 
             holder.txtTitle = (TextView) row.findViewById(R.id.txtTitle);
-            holder.txtDetail = (TextView) row.findViewById(R.id.txtDetail);
+            holder.txtDetail = (TextView) row.findViewById(R.id.txtDetails);
             row.setTag(holder);
 
         }

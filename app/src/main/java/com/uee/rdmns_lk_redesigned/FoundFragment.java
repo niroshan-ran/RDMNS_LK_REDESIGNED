@@ -71,7 +71,7 @@ public class FoundFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 TextView textViewItem = ((TextView) view.findViewById(R.id.txtTitle));
-                TextView textViewDetail = ((TextView) view.findViewById(R.id.txtDetail));
+                TextView textViewDetail = ((TextView) view.findViewById(R.id.txtDetails));
 
                 ViewFoundItemFragment ldf = new ViewFoundItemFragment();
                 Bundle args = new Bundle();

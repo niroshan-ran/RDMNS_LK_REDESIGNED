@@ -37,7 +37,7 @@ public class ViewLostItemFragment extends Fragment {
 
 
         textTitle = view.findViewById(R.id.txtTitle);
-        textDetails = view.findViewById(R.id.txtDetail);
+        textDetails = view.findViewById(R.id.txtDetails);
         btnBack = view.findViewById(R.id.btnBack);
 
         textTitle.setText(title);
