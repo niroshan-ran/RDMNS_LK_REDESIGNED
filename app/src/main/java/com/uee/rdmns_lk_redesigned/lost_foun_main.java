@@ -18,6 +18,8 @@ public class lost_foun_main extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.nav_bottom);
         bottomNav.setOnNavigationItemSelectedListener(navListner);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_main,new LostFragment()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
