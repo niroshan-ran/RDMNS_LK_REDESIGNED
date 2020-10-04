@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
             <Button
-                android:id="@+id/submitNews"
+                android:id="@+id/btnsubmitNews"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/l_rounded_button"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
             <Button
-                android:id="@+id/contactsOfStations"
+                android:id="@+id/btnContactsOfStations"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/l_rounded_button"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp">
             <Button
-                android:id="@+id/contactSecurity"
+                android:id="@+id/btnContactSecurity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/l_rounded_button"

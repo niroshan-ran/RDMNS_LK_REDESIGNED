@@ -15,4 +15,8 @@
     <string name="txtSubject">Subject : </string>
     <string name="txtComplaint">Complaint : </string>
     <string name="btnSubmit">Submit</string>
+    <string name="title_activity_anout__us">Anout_Us</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_about__us">About_Us</string>
 </resources>
