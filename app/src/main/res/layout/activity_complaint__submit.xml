@@ -31,7 +31,8 @@
             android:id="@+id/emailAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Entery Your Email" />
+            android:text="lahiruferreira444@gmail.com"
+            android:focusable="false"/>
 
     </LinearLayout>
 
@@ -74,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20sp"
+            android:gravity="center|top"
             android:text="@string/txtComplaint"/>
 
     </LinearLayout>
