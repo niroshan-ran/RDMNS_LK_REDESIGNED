@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class Menu_new extends AppCompatActivity {
 
-    private Button btnMenuComplaint,btnSecurity,btnStations;
+    private Button btnMenuComplaint,btnSecurity,btnAboutUs;
 
 
     @Override
@@ -36,15 +36,15 @@ public class Menu_new extends AppCompatActivity {
             }
         });
 
-        btnStations = (Button) findViewById(R.id.btnContactsOfStations);
-        btnStations.setOnClickListener(new View.OnClickListener() {
+
+        btnAboutUs = (Button) findViewById(R.id.btnAboutUs);
+        btnAboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Menu_new.this,Contact_Stations.class);
+                Intent intent = new Intent(Menu_new.this,AboutUs.class);
                 startActivity(intent);
             }
         });
-
 
 
 
