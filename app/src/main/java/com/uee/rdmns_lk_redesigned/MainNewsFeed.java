@@ -1,12 +1,12 @@
 package com.uee.rdmns_lk_redesigned;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -22,8 +22,8 @@ public class MainNewsFeed extends AppCompatActivity {
 
     ListView NewsFeed_listView;
     int newsBanners[] = {R.drawable.news1, R.drawable.news2, R.drawable.news3, R.drawable.news4};
-    String newsTopics[] = {"News 1","News 2","News 3","News 4"};
-    String newsDescription[] = {"This is Description 1", "This is Description 2","This is Description 3","This is Description 4"};
+    String newsTopics[] = {"දැනුම්දීමයි !","News 2","News 3","News 4"};
+    String newsDescription[] = {"රාත්\u200Dරී 08/45 ට කොළඹ කොටුව සිට පොල්ගහවෙල හන්දිය දක්වා ධාවනය වන (හුනුපිටිය දුම්රිය ස්ථානයෙන් රාත්\u200Dරී 09/06 ට පිටත් වීමට නියමිත) මන්දගාමී දුම්රිය විනාඩි 19 ක ප්\u200Dරමාදයක් සහිතව ධාවනය වේ.", "This is Description 2","This is Description 3","This is Description 4"};
 
     List<NewsFeedModel> listNewsFeed = new ArrayList<>();
 
@@ -32,7 +32,7 @@ public class MainNewsFeed extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.news_feed);
+        setContentView(R.layout.activity_news_feed);
 
         NewsFeed_listView = findViewById(R.id.NewsFeedListview);
 
@@ -43,7 +43,6 @@ public class MainNewsFeed extends AppCompatActivity {
         }
 
         customAdapter = new CustomAdapter(listNewsFeed, this);
-
         NewsFeed_listView.setAdapter(customAdapter);
 
     }
@@ -76,8 +75,8 @@ public class MainNewsFeed extends AppCompatActivity {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup viewGroup) {
-            View view = getLayoutInflater().inflate(R.layout.row_news_feed, null);
+        public View getView(final int position, View convertView, ViewGroup viewGroup) {
+            @SuppressLint("ViewHolder") View view = getLayoutInflater().inflate(R.layout.row_news_feed, null);
 
             ImageView imageView = view.findViewById(R.id.newsBanner);
             TextView texttopic = view.findViewById(R.id.newsTopic);
@@ -87,6 +86,12 @@ public class MainNewsFeed extends AppCompatActivity {
             texttopic.setText(newsFeedModelListFiltered.get(position).getTopic());
             textDes.setText(newsFeedModelListFiltered.get(position).getDesc());
 
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(MainNewsFeed.this, ViewNewsActivity.class).putExtra("news",newsFeedModelListFiltered.get(position)));
+                }
+            });
 
             return view;
         }

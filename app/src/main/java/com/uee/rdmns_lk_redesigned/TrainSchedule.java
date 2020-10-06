@@ -1,5 +1,6 @@
 package com.uee.rdmns_lk_redesigned;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -10,10 +11,13 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.webkit.WebView;
 
 import com.uee.rdmns_lk_redesigned.ui.trainSchedules.SectionsPagerAdapter;
 
 public class TrainSchedule extends AppCompatActivity {
+
+    String url = "http://eservices.railway.gov.lk/schedule/searchTrain/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +32,15 @@ public class TrainSchedule extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetJavaScriptEnabled")
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Refreshing", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                WebView webView = findViewById(R.id.online_schedule_form);
+
+                webView.loadUrl(url);
             }
         });
     }

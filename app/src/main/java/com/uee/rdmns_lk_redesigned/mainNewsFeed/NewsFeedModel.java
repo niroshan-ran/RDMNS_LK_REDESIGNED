@@ -1,6 +1,8 @@
 package com.uee.rdmns_lk_redesigned.mainNewsFeed;
 
-public class NewsFeedModel {
+import java.io.Serializable;
+
+public class NewsFeedModel implements Serializable {
 
     private String topic;
     private String desc;
