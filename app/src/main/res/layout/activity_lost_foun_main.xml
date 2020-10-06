@@ -4,24 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:isScrollContainer="false"
     tools:context=".lost_foun_main">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/lost_found_menu"
         android:layout_marginBottom="1dp"
+        android:background="#00ACC1"
+        app:itemIconSize="26dp"
+        app:itemIconTint="@android:color/secondary_text_dark"
+        app:itemTextColor="#F4F4F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/lost_found_menu"
         tools:ignore="MissingConstraints" />
 
     <com.google.android.material.circularreveal.CircularRevealFrameLayout
         android:id="@+id/frame_main"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:isScrollContainer="false"
         app:layout_constraintBottom_toTopOf="@+id/nav_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
