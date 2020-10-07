@@ -7,10 +7,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"
+        android:background="@drawable/border_news_feed"
         android:layout_margin="8dp"
-        
-        android:backgroundTint="@color/colorAccent">
+        >
         <ImageView
             android:id="@+id/newsBanner"
             android:src="@drawable/news2"
@@ -22,7 +21,7 @@
             android:id="@+id/newsTopic"
             android:layout_marginStart="80dp"
             android:textSize="15sp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textStyle="bold"
             android:text="NewsTopic"
             android:layout_width="wrap_content"
@@ -31,7 +30,7 @@
             android:id="@+id/newsDescription"
             android:layout_marginStart="80dp"
             android:textStyle="bold"
-            android:textColor="#fff"
+            android:textColor="#275F7C"
             android:text="Description"
             android:layout_marginTop="0dp"
             android:layout_below="@id/newsTopic"
