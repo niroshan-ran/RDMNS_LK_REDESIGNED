@@ -19,6 +19,10 @@
             android:name=".MainNewsFeed"
             android:label="@string/title_activity_train_schedule"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".Contact_Stations" />
+        <activity android:name=".Contact_Security" />
+        <activity android:name=".Complaint_Submit" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,5 +31,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

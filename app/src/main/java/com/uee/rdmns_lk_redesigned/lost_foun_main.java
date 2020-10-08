@@ -37,11 +37,11 @@ public class lost_foun_main extends AppCompatActivity {
                         case R.id.nav_instruction:
                                 selectedFragment = new InstructionFragment();
                                 break;
-                    }
+}
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_main,selectedFragment).commit();
+    getSupportFragmentManager().beginTransaction().replace(R.id.frame_main,selectedFragment).commit();
 
-                    return true;
-                }
-            };
+        return true;
+        }
+        };
 }
