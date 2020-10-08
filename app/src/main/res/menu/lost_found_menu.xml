@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/nav_lost" android:icon="@drawable/ic_lost" android:title="Lost"/>
+
+        <item android:id="@+id/nav_found" android:icon="@drawable/ic_found" android:title="Found"/>
+
+        <item android:id="@+id/nav_instruction" android:icon="@drawable/ic_instruction" android:title="Instruction"/>
+</menu>

@@ -8,4 +8,6 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="Train_Schecule">Train Schecule</string>
     <string name="main_news_feed">Main News Feed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
