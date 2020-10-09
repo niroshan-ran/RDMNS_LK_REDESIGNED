@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btnMenuComplaint,btnSecurity,btnAboutUs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,34 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, MainNewsFeed.class);
                 startActivity(i);
+            }
+        });
+
+        btnMenuComplaint = (Button) findViewById(R.id.btnComplaints);
+        btnMenuComplaint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Complaint_Submit.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSecurity = (Button) findViewById(R.id.btnSecurity);
+        btnSecurity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Contact_Security.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnAboutUs = (Button) findViewById(R.id.btnAboutUs);
+        btnAboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,AboutUs.class);
+                startActivity(intent);
             }
         });
     }
