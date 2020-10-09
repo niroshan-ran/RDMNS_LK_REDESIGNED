@@ -10,13 +10,14 @@
         android:background="@drawable/border_news_feed"
         android:layout_margin="8dp"
         >
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/newsBanner"
             android:src="@drawable/news2"
+            android:scaleType="centerCrop"
             android:padding="1dp"
-            android:background="#000000"
             android:layout_width="75dp"
             android:layout_height="75dp"/>
+
         <TextView
             android:id="@+id/newsTopic"
             android:layout_marginStart="80dp"
