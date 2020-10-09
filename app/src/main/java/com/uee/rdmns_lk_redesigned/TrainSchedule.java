@@ -1,6 +1,8 @@
 package com.uee.rdmns_lk_redesigned;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.http.SslError;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -11,7 +13,9 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.uee.rdmns_lk_redesigned.ui.trainSchedules.SectionsPagerAdapter;
 
@@ -30,17 +34,17 @@ public class TrainSchedule extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = findViewById(R.id.fab);
+        final WebView webView = findViewById(R.id.online_schedule_form);
+
 
         fab.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetJavaScriptEnabled")
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Refreshing", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
 
-                WebView webView = findViewById(R.id.online_schedule_form);
+                Intent i = new Intent(TrainSchedule.this, TrainSchedule.class);
+                startActivity(i);
 
-                webView.loadUrl(url);
             }
         });
     }

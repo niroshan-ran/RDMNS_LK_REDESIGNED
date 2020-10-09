@@ -1,6 +1,7 @@
 package com.uee.rdmns_lk_redesigned;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -49,16 +50,20 @@ public class ViewNewsActivity extends AppCompatActivity {
 
         }
 
-        FloatingActionButton floatingActionButton = findViewById(R.id.imageShareFab);
+        FloatingActionButton floatingActionButton = (FloatingActionButton)findViewById(R.id.imageShareFab);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
 
             @SuppressLint("SetWorldReadable")
             @Override
             public void onClick(View view) {
-                Toast.makeText(ViewNewsActivity.this,"start", Toast.LENGTH_SHORT).show();
+
                 Drawable myDrawable = imageView.getDrawable();
                 Bitmap bitmap = ((BitmapDrawable)myDrawable).getBitmap();
+
+                String newsTop = textViewTopic.getText().toString();
+                String newsDes = textViewDes.getText().toString();
+                String newsConcat = newsTop + "/n"+newsDes;
 
                 try {
                     File file = new File(ViewNewsActivity.this.getExternalCacheDir(), "myImage.png");
@@ -70,7 +75,9 @@ public class ViewNewsActivity extends AppCompatActivity {
 
                     Intent intent1 = new Intent(Intent.ACTION_SEND);
                     intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent1.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
+                    intent1.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                    intent1.putExtra(Intent.EXTRA_TEXT, newsConcat);
+                    intent1.putExtra(Intent.EXTRA_STREAM, FileProvider.getUriForFile(ViewNewsActivity.this, BuildConfig.APPLICATION_ID + ".provider",file));
                     intent1.setType("image/png");
                     startActivity(Intent.createChooser(intent1,"Share Image Via"));
 
