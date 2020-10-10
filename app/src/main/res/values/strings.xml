@@ -8,11 +8,16 @@
     <string name="menuName4">Submit Complaints</string>
     <string name="menuName5">About Us</string>
 
+
     <!-- Submit Complaints Strings -->
     <string name="txtViewEmail">Your Email : </string>
     <string name="txtSubject">Subject : </string>
     <string name="txtComplaint">Complaint : </string>
+    <string name="txtDescription">Description : </string>
+    <string name="titleSubmitNews">Submit News</string>
+    <string name="btnImage">Image</string>
     <string name="btnSubmit">Submit</string>
+
     <string name="title_activity_anout__us">Anout_Us</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
@@ -21,6 +26,8 @@
     <string name="Train_Schecule">Train Schecule</string>
     <string name="main_news_feed">Main News Feed</string>
     <string name="lost_and_found">Lost And Found</string>
+    <string name="hintSubject">Enter News Subject</string>
+    <string name="hintDescription">Enter News Description</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

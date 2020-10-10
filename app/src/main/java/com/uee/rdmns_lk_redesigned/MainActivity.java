@@ -9,16 +9,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnMenuComplaint,btnSecurity,btnAboutUs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(getResources().getString(R.string.app_name));
         setContentView(R.layout.activity_main);
 
-        final Button buttonTrainSchedule = (Button) findViewById(R.id.trainSchedules);
-        final Button buttonNewsFeed = (Button) findViewById(R.id.main_news_feed);
-        final Button btnLostFound = (Button) findViewById(R.id.btnLostFound);
+        Button buttonSubmitNews = findViewById(R.id.submit_news);
+        buttonSubmitNews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, SubmitNews.class);
+                startActivity(i);
+            }
+        });
 
+        Button buttonTrainSchedule = findViewById(R.id.trainSchedules);
         buttonTrainSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonNewsFeed = findViewById(R.id.main_news_feed);
         buttonNewsFeed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnLostFound = findViewById(R.id.btnLostFound);
         btnLostFound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-        btnMenuComplaint = (Button) findViewById(R.id.btnComplaints);
+        Button btnMenuComplaint = findViewById(R.id.btnComplaints);
         btnMenuComplaint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnSecurity = (Button) findViewById(R.id.btnSecurity);
+        Button btnSecurity = findViewById(R.id.btnSecurity);
         btnSecurity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btnAboutUs = (Button) findViewById(R.id.btnAboutUs);
+        Button btnAboutUs = findViewById(R.id.btnAboutUs);
         btnAboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

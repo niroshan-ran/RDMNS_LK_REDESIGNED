@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8D5D0D0"
+    android:orientation="vertical"
+    tools:context=".SubmitNews">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="vertical" >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="33dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="348dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/txtSubject"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp" />
+
+                <EditText
+                    android:id="@+id/editTextNewsSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:autofillHints=""
+                    android:background="@drawable/text_input"
+                    android:backgroundTint="#8DFFFFFF"
+                    android:ems="10"
+                    android:hint="@string/hintSubject"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:text="@string/txtDescription"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp" />
+
+                <EditText
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="223dp"
+                    android:autofillHints=""
+                    android:background="@drawable/text_input"
+                    android:backgroundTint="#8DFFFFFF"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/hintDescription"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnSubmitNews"
+                android:layout_width="123dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_style"
+                android:backgroundTint="#4CAF50"
+                android:contentDescription="@string/btnImage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnClearValues"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.338"
+                app:srcCompat="@drawable/ic_baseline_send_24" />
+
+            <ImageButton
+                android:id="@+id/btnClearValues"
+                android:layout_width="123dp"
+                android:layout_height="81dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_style"
+                android:backgroundTint="#F44336"
+                android:contentDescription="@string/btnImage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btnSubmitNews"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.338"
+                app:srcCompat="@drawable/ic_baseline_delete_sweep_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>
