@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewNewsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/newsImageView"
+                android:background="@drawable/border_news_feed"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp"/>
+            <TextView
+                android:id="@+id/newsTopicName"
+                android:layout_below="@id/newsImageView"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/newsDesText"
+                android:layout_below="@id/newsTopicName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_baseline_share_24"
+                app:fabSize="normal"
+                android:backgroundTint="@color/colorPrimary"
+                android:id="@+id/imageShareFab"
+                app:elevation="6dp"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
