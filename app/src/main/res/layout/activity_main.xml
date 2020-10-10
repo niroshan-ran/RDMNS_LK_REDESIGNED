@@ -194,10 +194,10 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/btnLostFound"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/button_text" />
+                    android:text="@string/lost_and_found" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

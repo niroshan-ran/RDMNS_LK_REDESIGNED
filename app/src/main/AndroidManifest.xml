@@ -23,6 +23,7 @@
         <activity android:name=".Contact_Stations" />
         <activity android:name=".Contact_Security" />
         <activity android:name=".Complaint_Submit" />
+        <activity android:name=".lost_foun_main" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

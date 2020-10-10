@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Button buttonTrainSchedule = (Button) findViewById(R.id.trainSchedules);
         final Button buttonNewsFeed = (Button) findViewById(R.id.main_news_feed);
+        final Button btnLostFound = (Button) findViewById(R.id.btnLostFound);
 
         buttonTrainSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        btnLostFound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, lost_foun_main.class);
+                startActivity(i);
+            }
+        });
+
+
 
         btnMenuComplaint = (Button) findViewById(R.id.btnComplaints);
         btnMenuComplaint.setOnClickListener(new View.OnClickListener() {
