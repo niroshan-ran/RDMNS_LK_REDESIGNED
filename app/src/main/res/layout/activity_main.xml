@@ -1,309 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/menu_description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="210dp"
-            android:layout_height="44dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="134dp"
-            android:layout_marginBottom="18dp"
-            android:text="@string/menu_description"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="89dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
+            android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
 
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
+        <ScrollView
+            android:layout_width="348dp"
+            android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textAlignment="textEnd">
 
                 <Button
                     android:id="@+id/main_news_feed"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/main_news_feed" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_icons8_news"
+                    android:text="@string/main_news_feed"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton11"
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
+                    android:layout_height="14dp" />
 
                 <Button
                     android:id="@+id/live_updates"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/titleLiveUpdates" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_notifications_active_24"
+                    android:text="@string/titleLiveUpdates"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton10"
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
+                    android:layout_height="14dp" />
 
                 <Button
                     android:id="@+id/submit_news"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/titleSubmitNews" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_mail_outline_24"
+                    android:text="@string/titleSubmitNews"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton2"
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
+                    android:layout_height="14dp" />
 
                 <Button
                     android:id="@+id/trainSchedules"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/Train_Schecule" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_train_24"
+                    android:text="@string/Train_Schecule"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton3"
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/btnComplaints"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/menuName4" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/btnSecurity"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/menuName3" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
+                    android:layout_height="14dp" />
 
                 <Button
                     android:id="@+id/btnLostFound"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/lost_and_found" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_search_24"
+                    android:text="@string/lost_and_found"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="89dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton6"
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@android:drawable/ic_dialog_alert" />
-            </RelativeLayout>
+                    android:layout_height="14dp" />
 
-            <RelativeLayout
-                android:layout_width="284dp"
-                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btnSecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_call_24"
+                    android:text="@string/menuName3"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp" />
+
+                <Button
+                    android:id="@+id/btnComplaints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_assignment_24"
+                    android:text="@string/menuName4"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp" />
 
                 <Button
                     android:id="@+id/btnAboutUs"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/menuName5" />
-            </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:text="@string/menuName5"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
+
 </LinearLayout>

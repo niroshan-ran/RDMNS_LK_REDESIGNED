@@ -4,9 +4,9 @@
     <string name="button_text">Submit News</string>
     <string name="image_description">Test Content Description</string>
     <!-- Menu Strings of Lahiru -->
-    <string name="menuName3">Contact Railway Security</string>
-    <string name="menuName4">Submit Complaints</string>
-    <string name="menuName5">About Us</string>
+    <string name="menuName3">&#160;Contact Railway Security</string>
+    <string name="menuName4">&#160;Submit Complaints</string>
+    <string name="menuName5">&#160;About Us</string>
 
 
     <!-- Submit Complaints Strings -->
@@ -14,8 +14,8 @@
     <string name="txtSubject">Subject : </string>
     <string name="txtComplaint">Complaint : </string>
     <string name="txtDescription">Description : </string>
-    <string name="titleSubmitNews">Submit News</string>
-    <string name="titleLiveUpdates">Live Updates and Notifications</string>
+    <string name="titleSubmitNews">&#160;Submit News</string>
+    <string name="titleLiveUpdates">&#160;Live Updates and Notifications</string>
     <string name="btnImage">Image</string>
     <string name="btnSubmit">Submit</string>
 
@@ -27,9 +27,9 @@
     <string name="tab_other">Other</string>
     <string name="title_activity_about__us">About_Us</string>
     <string name="title_activity_train_schedule">TrainSchedule</string>
-    <string name="Train_Schecule">Train Schecule</string>
-    <string name="main_news_feed">Main News Feed</string>
-    <string name="lost_and_found">Lost And Found</string>
+    <string name="Train_Schecule">&#160;Train Schecule</string>
+    <string name="main_news_feed">&#160;Main News Feed</string>
+    <string name="lost_and_found">&#160;Lost And Found</string>
     <string name="hintSubject">Enter News Subject</string>
     <string name="hintDescription">Enter News Description</string>
     <!-- TODO: Remove or change this placeholder text -->
