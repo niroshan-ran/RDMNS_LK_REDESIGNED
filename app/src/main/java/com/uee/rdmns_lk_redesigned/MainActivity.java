@@ -15,6 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setTitle(getResources().getString(R.string.app_name));
         setContentView(R.layout.activity_main);
 
+        Button buttonLiveUpdates = findViewById(R.id.live_updates);
+        buttonLiveUpdates.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, LiveUpdatesAndNotificationsActivity.class);
+                startActivity(i);
+            }
+        });
+
         Button buttonSubmitNews = findViewById(R.id.submit_news);
         buttonSubmitNews.setOnClickListener(new View.OnClickListener() {
             @Override

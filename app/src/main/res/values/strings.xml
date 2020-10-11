@@ -15,12 +15,16 @@
     <string name="txtComplaint">Complaint : </string>
     <string name="txtDescription">Description : </string>
     <string name="titleSubmitNews">Submit News</string>
+    <string name="titleLiveUpdates">Live Updates and Notifications</string>
     <string name="btnImage">Image</string>
     <string name="btnSubmit">Submit</string>
 
     <string name="title_activity_anout__us">Anout_Us</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_main">Main</string>
+    <string name="tab_coastal">Coastal</string>
+    <string name="tab_kv">KV</string>
+    <string name="tab_pt">PT</string>
+    <string name="tab_other">Other</string>
     <string name="title_activity_about__us">About_Us</string>
     <string name="title_activity_train_schedule">TrainSchedule</string>
     <string name="Train_Schecule">Train Schecule</string>
@@ -30,4 +34,7 @@
     <string name="hintDescription">Enter News Description</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_live_updates_and_notifications">
+        LiveUpdatesAndNotificationsActivity
+    </string>
 </resources>

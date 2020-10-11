@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubmitNews"/>
+        <activity
+            android:name=".LiveUpdatesAndNotificationsActivity"
+            android:label="@string/title_activity_live_updates_and_notifications"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".SubmitNews" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Contact_Stations" />
         <activity android:name=".Contact_Security" />
