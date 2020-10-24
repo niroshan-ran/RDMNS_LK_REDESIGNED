@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">RDMNS_LK_REDESIGNED</string>
-    <string name="menu_description">Welcome to RDMNS.LK</string>
+    <string name="app_name">RDMNS.LK (REDESIGNED) </string>
+    <string name="menu_description">දුම්රිය මගීන්ගේ නිල සමුහය</string>
+    <string name="menu_description2">Official Network of Railway Passengers</string>
+    <string name="menu_description3">www.RDMNS.LK</string>
     <string name="button_text">Submit News</string>
     <string name="image_description">Test Content Description</string>
     <!-- Menu Strings of Lahiru -->
@@ -14,12 +16,12 @@
     <string name="txtSubject">Subject : </string>
     <string name="txtComplaint">Complaint : </string>
     <string name="txtDescription">Description : </string>
-    <string name="titleSubmitNews">&#160;Submit News</string>
-    <string name="titleLiveUpdates">&#160;Live Updates and Notifications</string>
+    <string name="titleSubmitNews">Submit News</string>
+    <string name="titleLiveUpdates">Live Updates and Notifications</string>
     <string name="btnImage">Image</string>
     <string name="btnSubmit">Submit</string>
 
-    <string name="title_activity_anout__us">Anout_Us</string>
+    <string name="title_activity_anout__us">About_Us</string>
     <string name="tab_main">Main</string>
     <string name="tab_coastal">Coastal</string>
     <string name="tab_kv">KV</string>
@@ -27,9 +29,9 @@
     <string name="tab_other">Other</string>
     <string name="title_activity_about__us">About_Us</string>
     <string name="title_activity_train_schedule">TrainSchedule</string>
-    <string name="Train_Schecule">&#160;Train Schecule</string>
-    <string name="main_news_feed">&#160;Main News Feed</string>
-    <string name="lost_and_found">&#160;Lost And Found</string>
+    <string name="Train_Schecule">Train Schedule</string>
+    <string name="main_news_feed">Main News Feed</string>
+    <string name="lost_and_found">Lost And Found</string>
     <string name="hintSubject">Enter News Subject</string>
     <string name="hintDescription">Enter News Description</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -37,4 +39,27 @@
     <string name="title_activity_live_updates_and_notifications">
         LiveUpdatesAndNotificationsActivity
     </string>
+    <string name="title_activity_new_live_updates_and_notifications">
+        NewLiveUpdatesAndNotificationsActivity
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Back to Menu</string>
+
+    <string name="menu_home">Main Line</string>
+    <string name="menu_gallery">Coastal Line</string>
+    <string name="menu_slideshow">Kelani Valey Line</string>
+    <string name="menu_other_new">Puttalam Line</string>
+    <string name="menu_other">Other Lines</string>
+    <string name="menu_submit_news">&#160;Submit News\n&#160;පුවත් අපවෙත එවන්න</string>
+    <string name="menu_live_updates">&#160;Live Updates and Notifications\n&#160;සජීවී දුම්රිය ප්‍රමාදයන් සහ හදිසි දැනුම්දීම්</string>
+    <string name="menu_main_news_feed">&#160;Main News Feed\n&#160;ප්‍රධාන පුවත්</string>
+    <string name="menu_timetable">&#160;Train Schedule\n&#160;දුම්රිය කාලසටහන</string>
+    <string name="menu_lost_found">&#160;Lost And Found Items\n&#160;අතපසු වූ / හමුවූ බඩුබාහිරාදිය\n&#160;පිළිබද තොරතුරු</string>
+    <string name="menu_contact_security">&#160;Contact Railway Security\n&#160;දුම්රිය ආරක්‍ෂක අංශය වෙත සම්බන්ධ වන්න</string>
+    <string name="menu_submit_complaints">&#160;Submit Passenger Complaints\n&#160;දුම්රිය සම්බන්ධ මගී පැමිණිලි\n&#160;ඉදිරිපත් කිරීම</string>
+    <string name="menu_about_us">&#160;About Us\n&#160;අප ගැන</string>
 </resources>

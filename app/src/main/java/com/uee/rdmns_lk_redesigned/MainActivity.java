@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.uee.rdmns_lk_redesigned.ui.liveUpdates.NewLiveUpdatesAndNotificationsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         buttonLiveUpdates.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, LiveUpdatesAndNotificationsActivity.class);
+                Intent i = new Intent(MainActivity.this, NewLiveUpdatesAndNotificationsActivity.class);
                 startActivity(i);
             }
         });

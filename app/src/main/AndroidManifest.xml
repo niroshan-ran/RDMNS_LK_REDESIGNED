@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.liveUpdates.NewLiveUpdatesAndNotificationsActivity"
+            android:label="@string/title_activity_new_live_updates_and_notifications"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".LiveUpdatesAndNotificationsActivity"
             android:label="@string/title_activity_live_updates_and_notifications"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SubmitNews" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Contact_Stations" />
