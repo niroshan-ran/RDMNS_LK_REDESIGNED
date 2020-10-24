@@ -30,11 +30,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         switch (position){
             case 0:
-                offline_train_schedule offline_tab = new offline_train_schedule();
-                return offline_tab;
-            case 1:
                 online_train_schedule online_tab = new online_train_schedule();
                 return online_tab;
+            case 1:
+                offline_train_schedule offline_tab = new offline_train_schedule();
+                return offline_tab;
             default:
                 return null;
         }

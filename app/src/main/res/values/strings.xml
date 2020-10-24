@@ -31,6 +31,8 @@
     <string name="title_activity_train_schedule">TrainSchedule</string>
     <string name="Train_Schecule">Train Schedule</string>
     <string name="main_news_feed">Main News Feed</string>
+    <string name="noofflineNotification">අන්තර්ජාලය නොමැතිව ක්‍රියාත්මක වන මෙම විශේෂ දුම්රිය කාලසටහන තවම පරික්ෂණ අදීරයේ පවතින අතර නොබෝ දිනකින් මෙම සෙවාව ඔබට ලබා ගත හැකි වනු ඇත.</string>
+    <string name="contact_admin">Contact - admin@rdmns.lk</string>
     <string name="lost_and_found">Lost And Found</string>
     <string name="hintSubject">Enter News Subject</string>
     <string name="hintDescription">Enter News Description</string>

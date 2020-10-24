@@ -7,12 +7,15 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
+import android.net.http.SslError;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -22,8 +25,9 @@ import com.uee.rdmns_lk_redesigned.R;
 
 public class online_train_schedule extends Fragment {
 
-    public static ProgressDialog progDailog;
-    String url = "http://eservices.railway.gov.lk/schedule/searchTrain/";
+    Activity activity ;
+    private ProgressDialog progDailog;
+    String url = "https://eservices.railway.gov.lk/schedule/";
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -34,14 +38,61 @@ public class online_train_schedule extends Fragment {
         View root = inflater.inflate(R.layout.online_train_schedule, container, false);
         WebView webView = root.findViewById(R.id.online_schedule_form);
 
-//        progDailog = new ProgressDialog(getActivity());
 
-//        webView.setWebViewClient(new Mybrowser(progDailog));
+//        webView.getSettings().setJavaScriptEnabled(true);
+//        webView.getSettings().setLoadWithOverviewMode(true);
+//        webView.getSettings().setUseWideViewPort(true);
+//        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+//        webView.loadUrl(url);
+        activity = this.getActivity();
+
+        progDailog = ProgressDialog.show(activity, "Loading","Please wait...", true);
+        progDailog.setCancelable(false);
+
+
+
+//        WebSettings settings = webView.getSettings();
+//        settings.setJavaScriptEnabled(true);
+//        settings.setAllowContentAccess(true);
+//        settings.setDomStorageEnabled(true);
+
+        webView.getSettings().setAppCacheEnabled(true);
+
         webView.getSettings().setLoadsImagesAutomatically(true);
+
+
+
+
+//        webView.setWebViewClient(new WebViewClient(){
+//
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                progDailog.show();
+//                view.loadUrl(url);
+//
+//                return true;
+//            }
+//            @Override
+//            public void onPageFinished(WebView view, final String url) {
+//                progDailog.dismiss();
+//            }
+//        });
+
+        webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setLoadWithOverviewMode(true);
+//        webView.getSettings().setAllowContentAccess(true);
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
+//        webView.getSettings().setLoadWithOverviewMode(true);
+//        webView.getSettings().setUseWideViewPort(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.loadUrl(url);
-        //progDailog.hide();
+
+        webView.setWebViewClient(
+                new SSLTolerentWebViewClient()
+        );
+
+        webView.loadUrl("https://eservices.railway.gov.lk/schedule/searchTrain.action?lang=si");
+        progDailog.dismiss();
 
         return root;
     }
@@ -73,4 +124,13 @@ public class online_train_schedule extends Fragment {
         }
     }
 
+
+    private class SSLTolerentWebViewClient extends WebViewClient {
+
+        @Override
+        public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+            handler.proceed(); // Ignore SSL certificate errors
+        }
+
+    }
 }
