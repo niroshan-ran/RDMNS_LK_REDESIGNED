@@ -79,4 +79,14 @@
     <string name="secondClass">Second Class</string>
     <string name="thirdClass">Economic Class</string>
 
+    <string name="instruction1">දුම්රිය තුල හා දුම්රිය  පරිශ්‍රයන් තුල දී නැතිවන සහ හමුවන අයිතමයන් පිලිබදව දැනුවත් කිරීමේ පද්දතිය </string>
+    <string name="instruction2">දඋපදෙස්  </string>
+    <string name="instruction3">හමුවූ යමක් පිලිබදව තොරතුරු ලබාදීමට, ඔබට දුම්රිය තුල හෝ ඒ  අවට දී දුම්රිය මගියෙකුට අයත් යමක් හමුවුවහොත් :</string>
+    <string name="instruction4">1) එය ලගම පිහිටි දුම්රිය සටනය වෙත බාරදෙන්න </string>
+    <string name="instruction5">2)Found Item යටතේ එම අයිතමය හමුවූ දිනය, වෙලාව, ස්ථානය ආදී තොරතුරු අප වෙත එවන්න</string>
+    <string name="instruction6">3) තොරතුරු  එවීමෙදි අයිතමය ව්‍යාජ පුද්ගලයෙකුගේ අතට පත්වීමට ඇති අවස්ථාව අවම වන ලෙස තොරතුරු සපයන්න, අනන්‍යතාව තහවුරු කර ගත හැකි තොරතුරු ලබදිමෙන් වලකින්න</string>
+
+    <string name="instruction7">දුම්රිය තුල හෝ ඒ  අවට දී නැතිවූ යමක් පිලිබදව තොරතුරු ලබාදීමට,</string>
+    <string name="instruction8">1)Lost Items යටතේ එම අයිතමය නැතිවූ දිනය, වෙලාව, ස්ථානය ආදී තොරතුරු අප වෙත එවන්න</string>
+    <string name="instruction9">2) තොරතුරු  එවීමෙදි අයිතමය ව්‍යාජ පුද්ගලයෙකුගේ අතට පත්වීමට ඇති අවස්ථාව අවම වන ලෙස තොරතුරු සපයන්න, අනන්‍යතාව තහවුරු කර ගත හැකි තොරතුරු ලබදිමෙන් වලකින්න</string>
 </resources>
