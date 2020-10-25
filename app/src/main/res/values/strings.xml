@@ -68,4 +68,15 @@
     <string name="station_information">Railway Station Infromation</string>
     <string name="titleContactStations">Contact Railway Stations</string>
 
+    <string name="text1">ප්‍ර්‍රවේශ පත්‍ර මිළ ගණන්</string>
+    <string name="text2">කොළඹ කොටුව දුම්රිය ස්ථානයේ සිට</string>
+
+    <string name="firstClassSinhala">පළමු පන්තිය</string>
+    <string name="secondClassSinhala">දෙවන පන්තිය</string>
+    <string name="thirdClassSinhala">සකසුරුවම් පන්තිය</string>
+
+    <string name="firstClass">First Class</string>
+    <string name="secondClass">Second Class</string>
+    <string name="thirdClass">Economic Class</string>
+
 </resources>
