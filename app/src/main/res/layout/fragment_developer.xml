@@ -9,13 +9,15 @@
         android:id="@+id/txtInstructions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#C0C8C7"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_news_feed"
         android:paddingStart="16dp"
         android:paddingTop="10dp"
         android:paddingEnd="32dp"
         android:paddingBottom="10dp"
         android:text="ABOUT DEVELOPERS"
-        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,20 +26,20 @@
 
     <ImageView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_width="422dp"
+        android:layout_height="183dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtInstructions" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="59dp"
+        android:layout_width="314dp"
+        android:layout_height="46dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
@@ -49,30 +51,28 @@
 
     <ImageView
         android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_width="373dp"
+        android:layout_height="181dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="0dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="59dp"
+        android:layout_width="269dp"
+        android:layout_height="43dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:text="ABC DEF(UI Designer)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

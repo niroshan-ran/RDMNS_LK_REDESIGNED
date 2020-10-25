@@ -15,12 +15,13 @@ tools:context=".AboutUs">
         android:id="@+id/nav_bottom_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/about_us"
         android:layout_marginBottom="1dp"
+        android:background="@drawable/border_news_feed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/about_us"
         tools:ignore="MissingConstraints" />
 
 

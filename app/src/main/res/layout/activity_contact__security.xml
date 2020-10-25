@@ -14,22 +14,38 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="163dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="163dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_news_feed"
                 android:text="Railway Security Contact Number"
                 android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="45dp" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageNew"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/border_news_feed"
+                android:src="@drawable/train" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="137dp"
-            android:layout_margin="10dp"
+            android:layout_margin="3dp"
             android:gravity="center">
 
             <EditText
@@ -38,7 +54,7 @@
                 android:layout_height="93dp"
                 android:layout_marginTop="10dp"
                 android:focusable="false"
-                android:text="+94775860785"
+                android:text="+94 775 860785"
                 android:textColor="@color/btnColourL"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -54,9 +70,10 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/roundbtncl"
+                android:background="@drawable/border_news_feed"
                 android:src="@drawable/ic_baseline_phone_24" />
         </LinearLayout>
+
 
     </LinearLayout>
 
