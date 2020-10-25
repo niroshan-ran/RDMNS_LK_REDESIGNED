@@ -1,13 +1,18 @@
 package com.uee.rdmns_lk_redesigned;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,12 +34,26 @@ public class Contact_Stations extends AppCompatActivity implements
 
     EditText stationPhoneNumber;
 
+    TextView stationSinhala, station, firstClass, secondClass, thirdClass;
+
+    ImageButton callStation, shareStation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact__stations);
 
         stationList = findViewById(R.id.stationList);
+        stationSinhala = findViewById(R.id.textViewStationSinhala);
+        station = findViewById(R.id.textViewStation);
+        firstClass = findViewById(R.id.textViewFirstClassPrice);
+        secondClass = findViewById(R.id.textViewSecondClassPrice);
+        thirdClass = findViewById(R.id.textViewThirdClassPrice);
+
+        callStation = findViewById(R.id.callStation);
+        shareStation = findViewById(R.id.shareStationNumber);
+
+        stationPhoneNumber = findViewById(R.id.stationPhoneNumber);
 
         stationList.setOnItemSelectedListener(this);
 
@@ -57,7 +76,6 @@ public class Contact_Stations extends AppCompatActivity implements
             i++;
         }
 
-        stationPhoneNumber = findViewById(R.id.stationPhoneNumber);
 
         //Creating the ArrayAdapter instance having the country list
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, stationListNames);
@@ -65,15 +83,72 @@ public class Contact_Stations extends AppCompatActivity implements
         //Setting the ArrayAdapter data on the Spinner
         stationList.setAdapter(aa);
 
+        callStation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = stationPhoneNumber.getText().toString();
+
+                if (!phone.equals("")) {
+                    String s = "tel:" + phone;
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(s));
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(Contact_Stations.this, "Please Select a Railway Station", Toast.LENGTH_LONG).show();
+                }
+
+
+            }
+        });
+
+        shareStation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String shareBody = stationPhoneNumber.getText().toString();
+
+                if (!shareBody.equals("")) {
+                    /*Create an ACTION_SEND Intent*/
+                    Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+                    /*This will be the actual content you wish you share.*/
+                    /*The type of the content is text, obviously.*/
+                    intent.setType("text/plain");
+                    /*Applying information Subject and Body.*/
+                    intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                    /*Fire!*/
+                    startActivity(Intent.createChooser(intent, "Share Phone Number"));
+                } else {
+                    Toast.makeText(Contact_Stations.this, "Please Select a Railway Station", Toast.LENGTH_LONG).show();
+                }
+
+
+            }
+        });
+
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-        if (position > 0)
-            stationPhoneNumber.setText(stationObjects.get(position - 1).getPhoneNumber());
-        else
+        if (position > 0) {
+
+            StationModel obj = stationObjects.get(position - 1);
+
+            stationPhoneNumber.setText(obj.getPhoneNumber());
+            stationSinhala.setText(obj.getStationNameSinhala().concat(" දුම්රිය ස්ථානය"));
+            station.setText(obj.getStationName().concat(" Railway Station"));
+            firstClass.setText(String.valueOf(obj.getFirstClassPrice()));
+            secondClass.setText(String.valueOf(obj.getSecondClassPrice()));
+            thirdClass.setText(String.valueOf(obj.getThirdClassPrice()));
+        } else {
             stationPhoneNumber.setText("");
+            stationSinhala.setText("");
+            station.setText("");
+            firstClass.setText("0.00");
+            secondClass.setText("0.00");
+            thirdClass.setText("0.00");
+        }
+
 
     }
 
