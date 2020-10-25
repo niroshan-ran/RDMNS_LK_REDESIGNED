@@ -3,55 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/menu_description"
-        android:textAlignment="viewEnd"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:text="@string/menu_description2"
-        android:textAlignment="viewEnd"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/menu_description3"
-        android:textAlignment="viewEnd"
-        android:textSize="16sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="354dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/menu_description"
+            android:textAlignment="viewEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp" />
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_description2"
+            android:textAlignment="viewEnd"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_description3"
+            android:textAlignment="viewEnd"
+            android:textSize="14sp" />
 
         <ScrollView
-            android:layout_width="348dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -177,16 +174,16 @@
                     android:textColor="#FFFFFF" />
             </LinearLayout>
         </ScrollView>
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="38dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="38dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </LinearLayout>
