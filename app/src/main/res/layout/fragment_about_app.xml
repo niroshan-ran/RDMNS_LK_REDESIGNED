@@ -9,13 +9,15 @@
         android:id="@+id/txtInstructions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#C0C8C7"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_news_feed"
         android:paddingStart="16dp"
         android:paddingTop="10dp"
         android:paddingEnd="32dp"
         android:paddingBottom="10dp"
         android:text="ABOUT APPLICATION"
-        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,18 +113,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="0dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

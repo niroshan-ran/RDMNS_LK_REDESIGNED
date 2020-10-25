@@ -4,113 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTextBox"
     android:orientation="vertical"
     tools:context=".Complaint_Submit">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="@string/txtViewEmail"/>
+            android:text="@string/txtViewEmail"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/emailAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="lahiruferreira444@gmail.com"
-            android:focusable="false"/>
+            android:background="@drawable/border_news_feed"
+            android:focusable="false"
+            android:text="lahiruferreira444@gmail.com" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="@string/txtSubject"/>
+            android:text="@string/txtSubject"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/emailSubject"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Enter Complaint Subject" />
+            android:background="@drawable/border_news_feed"
+            android:hint="Enter Complaint Subject"
+            android:textAlignment="textStart" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20sp"
             android:gravity="center|top"
-            android:text="@string/txtComplaint"/>
+            android:text="@string/txtComplaint"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:orientation="vertical"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/emailComplaint"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Enter Your Complaint...." />
+            android:background="@drawable/border_news_feed"
+            android:hint="Enter Your Complaint...."
+            android:textAlignment="viewStart" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:weightSum="5"
         android:layout_margin="30dp"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:weightSum="5">
 
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/l_rounded_button"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:text="@string/btnSubmit"/>
+            android:background="@drawable/l_rounded_button"
+            android:text="@string/btnSubmit"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
