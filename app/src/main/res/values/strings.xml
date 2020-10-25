@@ -64,4 +64,8 @@
     <string name="menu_contact_security">&#160;Contact Railway Security\n&#160;දුම්රිය ආරක්‍ෂක අංශය වෙත සම්බන්ධ වන්න</string>
     <string name="menu_submit_complaints">&#160;Submit Passenger Complaints\n&#160;දුම්රිය සම්බන්ධ මගී පැමිණිලි\n&#160;ඉදිරිපත් කිරීම</string>
     <string name="menu_about_us">&#160;About Us\n&#160;අප ගැන</string>
+    <string name="menu_contact_stations">Contact No. of Railway Stations\nදුම්රිය ස්ථානයන්හි දුරකථන අංක නාමාවලිය</string>
+    <string name="station_information">Railway Station Infromation</string>
+    <string name="titleContactStations">Contact Railway Stations</string>
+
 </resources>

@@ -133,11 +133,26 @@
                     android:layout_height="14dp" />
 
                 <Button
-                    android:id="@+id/btnSecurity"
+                    android:id="@+id/btnContactStations"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/menu_buttons"
                     android:drawableEnd="@drawable/ic_baseline_call_24"
+                    android:padding="10dp"
+                    android:text="@string/menu_contact_stations"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp" />
+
+                <Button
+                    android:id="@+id/btnSecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_buttons"
+                    android:drawableEnd="@drawable/ic_baseline_security_24"
                     android:padding="10dp"
                     android:text="@string/menu_contact_security"
                     android:textAlignment="textStart"

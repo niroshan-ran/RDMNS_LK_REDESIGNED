@@ -62,12 +62,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnContactStations = findViewById(R.id.btnContactStations);
+        btnContactStations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Contact_Stations.class);
+                startActivity(intent);
+            }
+        });
+
 
         Button btnMenuComplaint = findViewById(R.id.btnComplaints);
         btnMenuComplaint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Complaint_Submit.class);
+                Intent intent = new Intent(MainActivity.this, Complaint_Submit.class);
                 startActivity(intent);
             }
         });
