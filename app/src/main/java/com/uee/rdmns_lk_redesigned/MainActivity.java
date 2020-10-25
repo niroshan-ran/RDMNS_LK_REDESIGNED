@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.uee.rdmns_lk_redesigned.ui.liveUpdates.NewLiveUpdatesAndNotificationsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         buttonLiveUpdates.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, LiveUpdatesAndNotificationsActivity.class);
+                Intent i = new Intent(MainActivity.this, NewLiveUpdatesAndNotificationsActivity.class);
                 startActivity(i);
             }
         });
@@ -60,12 +62,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnContactStations = findViewById(R.id.btnContactStations);
+        btnContactStations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Contact_Stations.class);
+                startActivity(intent);
+            }
+        });
+
 
         Button btnMenuComplaint = findViewById(R.id.btnComplaints);
         btnMenuComplaint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Complaint_Submit.class);
+                Intent intent = new Intent(MainActivity.this, Complaint_Submit.class);
                 startActivity(intent);
             }
         });

@@ -4,21 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin" />
-
-    <WebView
-        android:id="@+id/offline_schedule_form"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#D3D3D3">
 
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/InDevlopment"
+            android:layout_width="351dp"
+            android:layout_height="113dp"
+            android:layout_above="@+id/emailRdmns"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/noofflineNotification"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/appbar_padding" />
+
+        <TextView
+            android:id="@+id/emailRdmns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/section_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="-293dp"
+            android:gravity="center"
+            android:text="@string/contact_admin"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
 
 </RelativeLayout>
