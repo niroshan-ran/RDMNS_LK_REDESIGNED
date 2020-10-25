@@ -6,12 +6,17 @@ android {
 
     defaultConfig {
         applicationId "com.uee.rdmns_lk_redesigned"
-        minSdkVersion 26
+        minSdkVersion 18
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
     }
 
     buildTypes {
